@@ -1,6 +1,10 @@
+# Thanks to the random guy on youtube for this code!
+
+import ConfigEgoAI
 import ollama
-Lang_model = 'llama3.2:1b'
-question = input("Question: ")
+
+Lang_model = ConfigEgoAI.Lang_model
+
 
 def ask_ollama(question,model):
   stream = ollama.chat(
@@ -13,5 +17,4 @@ def ask_ollama(question,model):
     print(chunk['message']['content'], end='', flush=True)
 
 
-
-ask_ollama(question,Lang_model)
+# ask_ollama("HelloWorld",Lang_model)

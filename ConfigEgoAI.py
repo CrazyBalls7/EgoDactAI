@@ -1,0 +1,1 @@
+Lang_model = 'llama3.2:1b'
