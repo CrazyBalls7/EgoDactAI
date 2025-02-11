@@ -1,6 +1,6 @@
 # Thanks to the random guy on youtube for this code!
 
-import ConfigEgoAI
+import Main.ConfigEgoAI as ConfigEgoAI
 import ollama
 
 Lang_model = ConfigEgoAI.Lang_model
