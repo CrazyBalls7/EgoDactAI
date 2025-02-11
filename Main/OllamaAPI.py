@@ -1,6 +1,6 @@
 # Thanks to the random guy on youtube for this code!
 
-import Main.ConfigEgoAI as ConfigEgoAI
+import ConfigEgoAI as ConfigEgoAI
 import ollama
 
 Lang_model = ConfigEgoAI.Lang_model
@@ -17,4 +17,4 @@ def ask_ollama(question,model):
     print(chunk['message']['content'], end='', flush=True)
 
 
-# ask_ollama("HelloWorld",Lang_model)
+ask_ollama("How to be cool",Lang_model)
